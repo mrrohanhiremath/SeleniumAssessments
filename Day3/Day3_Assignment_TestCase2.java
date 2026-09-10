@@ -38,6 +38,8 @@ public class Day3_Assignment_TestCase2 {
 		else {
 			System.out.println("Date is displayed wrongly");
 		}
+		Thread.sleep(3000);
+		d.quit();
 		
 	}
 
