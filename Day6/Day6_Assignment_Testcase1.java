@@ -1,6 +1,7 @@
 package capgeminiAssignmentsOnSelenium.Day6;
 
 import java.awt.AWTException;
+
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
@@ -137,6 +138,8 @@ public class Day6_Assignment_Testcase1 {
 		//submit
 		driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
 		Thread.sleep(2000);Thread.sleep(2000);
+		
+		
 		//verify
 		WebElement record = driver.findElement(By.xpath("//div[contains(text(),\"rohan hiremath\")]"));
 		if(record.isDisplayed()) {
