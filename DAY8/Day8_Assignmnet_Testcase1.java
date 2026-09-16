@@ -115,13 +115,7 @@ public class Day8_Assignmnet_Testcase1 {
 		p2.getSubmit();
 		
 		//verify
-//		WebElement myrecord = p2.getRecords();
-//		if(myrecord.isDisplayed()) {
-//			System.out.println("candidate is added");
-//		}
-//		else {
-//			System.out.println("candidate not found");
-//		}
+		p2.getRecords();
 		//quit	
 		Thread.sleep(2000);
 		driver.quit();
