@@ -45,11 +45,13 @@ public class Day8_Assignmnet_Testcase1 {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(URL);
+		
 		//login
 		PomLogin p1 =new PomLogin(driver);
 		p1.getUn(USERNAME);
 		p1.getPwd(PASSWORD);
 		p1.getLgbutton();
+		
 		//click on recruiter
 		p1.getRecruitmrnt();
 		//click on add
