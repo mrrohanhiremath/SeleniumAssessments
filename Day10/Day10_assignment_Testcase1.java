@@ -124,6 +124,8 @@ public class Day10_assignment_Testcase1 extends sauseBaseClass{
 		else {
 			System.out.println("Message is not displayed");
 		}
+		
+		Thread.sleep(3000);
 	}
 	
 

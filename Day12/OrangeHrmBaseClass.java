@@ -1,11 +1,10 @@
-package capgeminiAssignmentsOnSelenium.Day10;
+package capgeminiAssignmentsOnSelenium.Day12;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -16,7 +15,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
-public class sauseBaseClass {
+public class OrangeHrmBaseClass {
 	WebDriver driver=null;
 	@BeforeSuite
 	public void Bs() {
@@ -24,7 +23,7 @@ public class sauseBaseClass {
 	}
 	@BeforeTest
 	public void Bt() throws IOException {
-		FileInputStream fis = new FileInputStream("./src/test/java/capgeminiAssignmentsOnSelenium/Day10/sausedemo.properties");
+		FileInputStream fis = new FileInputStream("./src/test/java/capgeminiAssignmentsOnSelenium/Day12/OrangeHrm.properties");
 		Properties p = new Properties();
 		p.load(fis);
 		
@@ -40,7 +39,7 @@ public class sauseBaseClass {
 	@BeforeMethod
 	public void Bm() throws IOException {
 		System.out.println("Im in before method");
-		FileInputStream fis = new FileInputStream("./src/test/java/capgeminiAssignmentsOnSelenium/Day10/sausedemo.properties");
+		FileInputStream fis = new FileInputStream("./src/test/java/capgeminiAssignmentsOnSelenium/Day12/OrangeHrm.properties");
 		Properties p = new Properties();
 		p.load(fis);
 		String URL = p.getProperty("url");
@@ -48,20 +47,20 @@ public class sauseBaseClass {
 		String PASSWORD = p.getProperty("password");
 		driver.get(URL);
 		
-		SuseLoginPom s= new SuseLoginPom(driver);
-		s.getUsername(USERNAME);
-		s.getPassword(PASSWORD);
-		s.getLoginbtn();
+		OrangeHrmLoginPom o= new OrangeHrmLoginPom(driver);
+		o.getUn(USERNAME);
+		o.getPwd(PASSWORD);
+		o.getLgbutton();
 		//driver.switchTo().alert().accept();
 		
 	}
-	@AfterMethod
-	public void Am() {
-		SauseLogoutPom s =new  SauseLogoutPom(driver);
-		s.getHam();
-		s.getLogout();
-		System.out.println("Logout done");
-	}
+//	@AfterMethod
+//	public void Am() {
+//		SauseLogoutPom s =new  SauseLogoutPom(driver);
+//		s.getHam();
+//		s.getLogout();
+//		System.out.println("Logout done");
+//	}
 	@AfterClass
 	public void Ac() {
 		driver.quit();
@@ -75,6 +74,5 @@ public class sauseBaseClass {
 	public void As() {
 		System.out.println("database connectivity close");
 	}
-	
 
 }
