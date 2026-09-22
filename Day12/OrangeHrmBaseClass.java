@@ -26,7 +26,6 @@ public class OrangeHrmBaseClass {
 		FileInputStream fis = new FileInputStream("./src/test/java/capgeminiAssignmentsOnSelenium/Day12/OrangeHrm.properties");
 		Properties p = new Properties();
 		p.load(fis);
-		
 		//properties file
 		String BROWSER = p.getProperty("browser");
 		if(BROWSER.equals("chrome")) {
