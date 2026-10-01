@@ -1,0 +1,214 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: demowebshop.tricentis.com",
+                "infFile": "t2.inf",
+                "time": 1790874833231
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Url: Register",
+                "infFile": "t3.inf",
+                "time": 1790874833822
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Submit Data: register",
+                "infFile": "t4.inf",
+                "time": 1790874834506
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: Tricentis Demo Web Shop",
+                "infFile": "t5.inf",
+                "time": 1790874835045
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: Books",
+                "infFile": "t7.inf",
+                "time": 1790874835643
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: Computing and Internet",
+                "infFile": "t8.inf",
+                "time": 1790874838128
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Submit Data: 1",
+                "infFile": "t9.inf",
+                "time": 1790874838543
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: cart",
+                "infFile": "t10.inf",
+                "time": 1790874839470
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: getstatesbycountryid",
+                "infFile": "t11.inf",
+                "time": 1790874840063
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Submit Data: cart_2",
+                "infFile": "t12.inf",
+                "time": 1790874841825
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Submit Data: OpcSaveBilling",
+                "infFile": "t13.inf",
+                "time": 1790874842899
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: getstatesbycountryid_2",
+                "infFile": "t14.inf",
+                "time": 1790874843226
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Submit Data: OpcSaveBilling_2",
+                "infFile": "t15.inf",
+                "time": 1790874844533
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Submit Data: OpcSaveShipping",
+                "infFile": "t16.inf",
+                "time": 1790874844921
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Submit Data: OpcSaveShippingMethod",
+                "infFile": "t17.inf",
+                "time": 1790874845406
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Submit Data: OpcSavePaymentMethod",
+                "infFile": "t18.inf",
+                "time": 1790874845999
+            },
+            {
+                "stepId": "STEP17",
+                "stepName": "Custom Request: OpcSavePaymentInfo",
+                "infFile": "t19.inf",
+                "time": 1790874846491
+            },
+            {
+                "stepId": "STEP18",
+                "stepName": "Custom Request: OpcConfirmOrder",
+                "infFile": "t20.inf",
+                "time": 1790874847026
+            },
+            {
+                "stepId": "STEP19",
+                "stepName": "Url: completed",
+                "infFile": "t21.inf",
+                "time": 1790874848121
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "1_LaunchUrl",
+                "rawStartTime": 1790874824150,
+                "rawEndTime": 1790874833237,
+                "thinkTime": 0.0,
+                "wastedTime": 0.20444989204406739
+            },
+            {
+                "transactionName": "2_Register",
+                "rawStartTime": 1790874833269,
+                "rawEndTime": 1790874833832,
+                "thinkTime": 0.0,
+                "wastedTime": 0.004075050354003906
+            },
+            {
+                "transactionName": "3_RegisterDetails",
+                "rawStartTime": 1790874833848,
+                "rawEndTime": 1790874835050,
+                "thinkTime": 0.0,
+                "wastedTime": 0.014483451843261719
+            },
+            {
+                "transactionName": "4_Category",
+                "rawStartTime": 1790874835066,
+                "rawEndTime": 1790874835647,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0066983699798583988
+            },
+            {
+                "transactionName": "5_product",
+                "rawStartTime": 1790874835678,
+                "rawEndTime": 1790874838137,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0075817108154296879
+            },
+            {
+                "transactionName": "6_AddtoCart",
+                "rawStartTime": 1790874838154,
+                "rawEndTime": 1790874838557,
+                "thinkTime": 0.0,
+                "wastedTime": 0.00537562370300293
+            },
+            {
+                "transactionName": "7_ShoppingCart",
+                "rawStartTime": 1790874838588,
+                "rawEndTime": 1790874841835,
+                "thinkTime": 0.0,
+                "wastedTime": 0.029672861099243165
+            },
+            {
+                "transactionName": "8_address",
+                "rawStartTime": 1790874841851,
+                "rawEndTime": 1790874844542,
+                "thinkTime": 0.0,
+                "wastedTime": 0.019309520721435548
+            },
+            {
+                "transactionName": "9_ShippingAddress",
+                "rawStartTime": 1790874844573,
+                "rawEndTime": 1790874844931,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0039048194885253908
+            },
+            {
+                "transactionName": "10_shippingMethod",
+                "rawStartTime": 1790874844962,
+                "rawEndTime": 1790874845412,
+                "thinkTime": 0.0,
+                "wastedTime": 0.004503726959228516
+            },
+            {
+                "transactionName": "11_paymentMethod",
+                "rawStartTime": 1790874845443,
+                "rawEndTime": 1790874846002,
+                "thinkTime": 0.0,
+                "wastedTime": 0.008893489837646485
+            },
+            {
+                "transactionName": "12_paymentinfo",
+                "rawStartTime": 1790874846034,
+                "rawEndTime": 1790874846499,
+                "thinkTime": 0.0,
+                "wastedTime": 0.00818943977355957
+            },
+            {
+                "transactionName": "13_confirm",
+                "rawStartTime": 1790874846531,
+                "rawEndTime": 1790874848126,
+                "thinkTime": 0.0,
+                "wastedTime": 0.009273052215576172
+            }
+        ]
+    }
+]
